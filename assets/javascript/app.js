@@ -19,102 +19,102 @@ var myQuestions = [
 
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
     {
         question: "Who is the strongest?",
-        answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously",
-            d: "Poopscum"
-        },
+        answers: [
+            "a: Superman",
+            "b: The Terminator",
+            "c: Waluigi, obviously",
+            "d: Poopscum"
+        ],
         correctAnswer: "c"
     },
 ];
@@ -122,8 +122,11 @@ var myQuestions = [
 function setQuestions() {
     for (var i = 0; i < myQuestions.length; i++) { //start at 0 bc of array index (0 based)
         // pull questions from object
-        $(".question").append('<p>' + myQuestions[i].question + '</p>');
-
+        $(".questions").append('<p>' + myQuestions[i].question + '</p>');
+        for (var j = 0; j < myQuestions[i].answers.length; j++) {
+            // pull questions from object
+            $(".questions").append('<p>' + myQuestions[i].answers[j] + '</p>');
+        }
     }
 }
 
