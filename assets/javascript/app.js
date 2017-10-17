@@ -120,27 +120,16 @@ var myQuestions = [
 ];
 
 function setQuestions() {
-    for (var i = 1; i < 10; i++) {
-
-        let questionsQuiz = $("<div>");
-
+    for (var i = 0; i < myQuestions.length; i++) { //start at 0 bc of array index (0 based)
         // pull questions from object
-        let quizQuestions = myQuestions.length[i];
+        $(".question").append('<p>' + myQuestions[i].question + '</p>');
 
-        //add class to questions and add questions to parent element
-        questionsQuiz.addClass("questions");
-        questionsQuiz.attr("<p>", quizQuestions);
-
-
-        if (i < 10) {
-            $(".questions").append(questionsQuiz);
-        }
     }
 }
 
 $(document).ready(function() {
 
-    $('.btn').click(function() {
+    $(".btn").click(function() {
         setQuestions();
     })
 })
