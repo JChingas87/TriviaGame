@@ -18,7 +18,17 @@
 var myQuestions = [
 
     {
-        question: "Who is the strongest?",
+        question: "1.)  Which player has won the most NBA championships?",
+        answers: [
+            "a. Michael Jordan",
+            "b. Bill Russell",
+            "c. Kareem Abdul Jabbar",
+            "d. Wilt Chamberlain"
+        ],
+        correctAnswer: "c"
+    },
+    {
+        question: "2.)  Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -28,7 +38,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
+        question: "3.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -38,7 +48,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
+        question: "4.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -48,7 +58,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
+        question: "5.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -58,7 +68,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
+        question: "6.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -68,7 +78,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
+        question: "7.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -78,7 +88,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
+        question: "8.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -88,7 +98,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
+        question: "9.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -98,17 +108,7 @@ var myQuestions = [
         correctAnswer: "c"
     },
     {
-        question: "Who is the strongest?",
-        answers: [
-            "a: Superman",
-            "b: The Terminator",
-            "c: Waluigi, obviously",
-            "d: Poopscum"
-        ],
-        correctAnswer: "c"
-    },
-    {
-        question: "Who is the strongest?",
+        question: "10.) Who is the strongest?",
         answers: [
             "a: Superman",
             "b: The Terminator",
@@ -125,7 +125,10 @@ function setQuestions() {
         $(".questions").append('<p>' + myQuestions[i].question + '</p>');
         for (var j = 0; j < myQuestions[i].answers.length; j++) {
             // pull questions from object
-            $(".questions").append('<p>' + myQuestions[i].answers[j] + '</p>');
+            var radioBtn = $('<input type="radio" class="radio" name="radio" />');
+            radioBtn.appendTo(".questions");
+            // $(".questions").append('<p>' + radioBtn + myQuestions[i].answers[j] + '</p');
+            $(".questions").append('<p>' + myQuestions[i].answers[j] + '</p');
         }
     }
 }
