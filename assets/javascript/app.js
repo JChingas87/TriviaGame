@@ -128,9 +128,9 @@ function setQuestions() {
 $(document).ready(function() {
 
     var countdownTimer = {
-        time: 4,
+        time: 40,
         reset: function() {
-            countdownTimer.time = 4;
+            countdownTimer.time = 40;
             $('.timer').html('<h3>' + countdownTimer.time + ' seconds remaining</h3>');
             $('.timer').hide();
         },
