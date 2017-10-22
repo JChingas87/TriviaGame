@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
@@ -18,50 +20,58 @@
 
 <body>
     <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <h1 class="display-3">Sports Trivia!</h1>
-                    <p class="lead">Try and answer all the questions before the time runs out. Any questions left unanswered upon submission or running out of time will be considered incorrect. Goodluck!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-1"></div>
-    </div>
+                    <p class="lead1">Try and answer all the questions before the time runs out. Any questions left unanswered before running out of time will be considered incorrect. Goodluck!</p>
+                    <p class="lead2">Time Left:</p>
+                    <div class="timer">
 
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-3">Time</h1>
-                    <p class="lead"></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-2"></div>
     </div>
 
     <div id="container">
 
         <div id="questions-div">
-            <div class="row1">
-                <div class="col-lg-1"></div>
-                <div class="questions" class="col-lg-10">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="questions" class="col-md-8">
 
                 </div>
-                <div class="col-lg-1"></div>
+                <div class="col-md-2"></div>
             </div>
         </div>
 
         <div class="submit">
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <button type="button" id="button-1" class="btn btn-primary">Submit</button>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <button type="button" id="button-1" class="btn btn-primary">Let's Start!</button>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="submit">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="correct">
+
+                    </div>
+                    <div class="incorrect">
+
+                    </div>
+                    <div class="score">
+
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
             </div>
         </div>
     </div>

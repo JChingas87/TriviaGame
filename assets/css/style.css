@@ -1,3 +1,65 @@
-.questions {
-    margin-left: 50px;
-}
+    body {
+        background-image: url("../images/14_flat_sports_seamless_1.jpg");
+        background-size: 100%;
+    }
+    
+    .questions {
+        margin-left: 80px;
+        margin-bottom: 100px;
+        font-family: 'Vollkorn', serif;
+        color: rgb(112, 2, 2);
+        background-image: url("../images/pexels-photo-242236.jpeg");
+        background-size: auto 100%;
+        padding: 20px 20px 20px 20px;
+        line-height: 25px;
+    }
+    
+    .jumbotron {
+        height: 250px;
+        text-align: center;
+        padding-top: 15px;
+        margin-bottom: 25px;
+        background-image: url("../images/b0ec2cddf4ddc108dd0ca4143b28a89a_grass-clipart-transparent-background-clipart-pie-cliparts-grass-clipart-no-background_1140-460.png");
+        background-size: 100%;
+        color: rgb(112, 2, 2);
+        font-family: 'Alfa Slab One', 'cursive';
+    }
+    
+    h1 {
+        padding-bottom: 20px;
+    }
+    
+    .lead1 {
+        padding-bottom: 25px;
+    }
+    
+    .lead2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .btn {
+        color: rgb(112, 2, 2);
+        background-color: white;
+        margin-left: 325px;
+        height: 100px;
+        width: 200px;
+        font-size: 35px;
+        font-family: 'Vollkorn', serif;
+    }
+    
+    .correct {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 35px;
+        margin-left: 325px;
+        color: rgb(112, 2, 2);
+        font-family: 'Vollkorn', serif;
+    }
+    
+    .incorrect {
+        font-size: 35px;
+        margin-left: 325px;
+        color: rgb(112, 2, 2);
+        font-family: 'Vollkorn', serif;
+    }
